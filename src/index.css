@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Modern purple-tinted neutral palette */
+  --color-slate-50: #fafafa;
+  --color-slate-100: #f4f4f7;
+  --color-slate-200: #eef0f3;
+  --color-slate-300: #dadddf;
+  --color-slate-400: #b0b4b9;
+  --color-slate-500: #717579;
+  --color-slate-600: #525659;
+  --color-slate-700: #333639;
+  --color-slate-800: #1c1e1f;
+  --color-slate-900: #121314;
+  
+  --color-indigo-50: #f5f3ff;
+  --color-indigo-600: #915DFF;
+  --color-indigo-700: #7B42FF;
+  --color-emerald-50: #f0fdf4;
+  --color-emerald-500: #10b981;
+  --color-emerald-700: #047857;
+  --color-amber-50: #fffbeb;
+  --color-amber-500: #f59e0b;
+  --color-amber-700: #b45309;
+  --color-red-50: #fef2f2;
+  --color-red-600: #dc2626;
+
+  /* Custom App Branding Colors */
+  --color-brand-light: #F4EFFF;
+  --color-brand-medium: #915DFF;
+  --color-brand-dark: #1F113D;
+}
+
+@layer utilities {
+  .bg-purple-gradient {
+    background: linear-gradient(135deg, #1A0D36 0%, #0A041A 100%);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-900);
+  -webkit-font-smoothing: antialiased;
+}
